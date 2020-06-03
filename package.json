@@ -1,6 +1,16 @@
 {
+  "name": "dine-restaurant-app",
+  "version": "1.0.0",
+  "description": "Dine restaurant landing page",
+  "main": "index.js",
+  "keywords": [
+    "nextjs",
+    "landing"
+  ],
+  "license": "ISC",
+  "author": "romanfilenko",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3200",
     "build": "next build",
     "start": "next start"
   },
@@ -9,5 +19,9 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass": "1.26.3"
+  },
+  "devDependencies": {
+    "next-images": "^1.4.0",
+    "node-sass": "^4.7.2"
   }
 }

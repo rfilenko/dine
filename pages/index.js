@@ -1,9 +1,12 @@
-import HelloWorld from '../components/hello-world'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="app">
-      <HelloWorld />
-    </div>
-  )
+    <>
+      <Header />
+      <main>main section</main>
+      <Footer />
+    </>
+  );
 }
