@@ -4,12 +4,11 @@ import Head from 'next/head';
 import Header from '../Header';
 import Footer from '../Footer';
 
-const BaseLayout = ({ title, children }) => {
+const BaseLayout = ({ children }) => {
   return (
     <>
       <Head>
         <html lang="en" />
-        <title>{title}</title>
       </Head>
       <Header />
       <main>{children}</main>
