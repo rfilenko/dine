@@ -14,21 +14,28 @@
     background-image: url(/images/ready-bg-tablet.jpg);
   }
   @media screen and (min-width: $bp-laptop) {
-    display: grid;
-    grid-template-columns: minmax(1rem, auto) repeat(2, minmax(15rem, 1fr)) minmax(
-        1rem,
-        auto
-      );
+    .container {
+      display: grid;
+      grid-template-columns:
+        minmax(1rem, 1fr) minmax(30.3125rem, 1fr) 7.8125rem minmax(
+          30.3125rem,
+          1fr
+        )
+        minmax(1rem, 1fr);
+    }
     background-image: url(/images/ready-bg-desktop.jpg);
 
     h3 {
-      grid-column: 2;
+      grid-column: 2 / span 2;
       align-self: center;
       margin-bottom: 0;
+      justify-self: flex-start;
     }
     button {
-      justify-self: center;
+      justify-self: end;
       margin-bottom: 0;
+      grid-column: 4/5;
+      align-self: center;
     }
   }
 }
