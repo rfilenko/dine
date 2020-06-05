@@ -98,12 +98,12 @@ ul {
   list-style: none;
 }
 .container {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   padding: 0 $spacing-medium $spacing-xxlarge;
   > * {
-    color: $clr-white;
     margin-bottom: $spacing-large;
   }
 }

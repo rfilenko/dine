@@ -97,20 +97,6 @@ main {
   text-align: center;
   padding-bottom: 0;
 }
-.lines {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 3.9375rem;
-  left: -2.875rem;
-  span {
-    display: inline-block;
-    width: 10rem;
-    height: $spacing-small / 2;
-    background: $clr-primary;
-    margin-bottom: $spacing-normal / 2;
-  }
-}
 
 @import '/styles/family-gathering';
 @import '/styles/reservation';
@@ -122,6 +108,26 @@ footer {
   color: $clr-white;
   .logo {
     margin-bottom: $spacing-xlarge;
+  }
+  p {
+    color: $clr-white;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    .container {
+      display: grid;
+      grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(23rem, 1fr)) minmax(
+          1rem,
+          1fr
+        );
+    }
+    .logo {
+      margin-bottom: 2.5rem;
+      grid-column: 2;
+    }
+    .address,
+    .open-hours {
+      text-align: left;
+    }
   }
 }
 p {
