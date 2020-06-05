@@ -16,12 +16,13 @@
   },
   "dependencies": {
     "next": "latest",
+    "next-compose-plugins": "^2.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass": "1.26.3"
   },
   "devDependencies": {
     "next-images": "^1.4.0",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.14.1"
   }
 }

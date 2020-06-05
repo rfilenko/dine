@@ -1,8 +1,5 @@
+const withPlugins = require('next-compose-plugins');
 const withImages = require('next-images');
 
 global.navigator = () => null;
-module.exports = withImages();
-
-module.exports = {
-  target: 'serverless',
-};
+module.exports = withPlugins([[withImages]]);

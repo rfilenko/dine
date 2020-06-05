@@ -8,9 +8,9 @@ const BaseLayout = ({ title, children }) => {
   return (
     <>
       <Head>
+        <html lang="en" />
         <title>{title}</title>
       </Head>
-
       <Header />
       <main>{children}</main>
       <Footer />
