@@ -5,12 +5,11 @@
     padding-top: 12.5rem;
     .container {
       display: grid;
+      display: grid;
       grid-template-columns:
-        minmax(1rem, 1fr) minmax(30.3125rem, 1fr) 7.8125rem minmax(
-          30.3125rem,
-          1fr
-        )
-        minmax(1rem, 1fr);
+        1rem minmax(25.3125rem, 1fr) minmax(25.3125rem, 1fr)
+        1rem;
+      gap: 3rem;
       justify-items: left;
     }
     .menu__intro {
@@ -18,7 +17,7 @@
     }
     .menu-list {
       grid-row: 1;
-      grid-column: 4;
+      grid-column: 3;
     }
     .menu-item {
       display: flex;
