@@ -3,15 +3,17 @@ export default function FamilyGathering() {
     <section className="family-gathering">
       <div className="container">
         <h2> Family Gathering</h2>
-        <img
-          srcSet="/images/family-gathering-mobile.jpg 480w,
+        <div className="img">
+          <img
+            srcSet="/images/family-gathering-mobile.jpg 480w,
              /images/family-gathering-tablet.jpg 500w,
              /images/family-gathering-desktop.jpg 992w"
-          sizes="(max-width: 499px) 480px,
+            sizes="(max-width: 499px) 480px,
             (max-width: 992px)  500px, 991px"
-          src="/images/family-gathering-tablet.jpg"
-          alt="family gathering"
-        />
+            src="/images/family-gathering-tablet.jpg"
+            alt="family gathering"
+          />
+        </div>
         <div className="lines">
           <span></span>
           <span></span>

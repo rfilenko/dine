@@ -1,4 +1,3 @@
-import styles from './Header.module.scss';
 import Logo from './Logo';
 
 export default function Header() {
