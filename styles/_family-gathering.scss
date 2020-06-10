@@ -53,7 +53,6 @@
     }
     .content {
       grid-column: 2;
-      padding-top: 3rem;
       p {
         font-size: $fs-body;
         line-height: 1.667;
@@ -108,8 +107,8 @@
     padding-top: 16rem;
     .container {
       grid-template-columns:
-        minmax(1rem, 1fr) minmax(30.3125rem, 1fr) minmax(30.3125rem, 1fr)
-        minmax(1rem, 1fr);
+        $spacing-medium minmax(30.3125rem, 1fr) minmax(30.3125rem, 1fr)
+        $spacing-medium;
       gap: 3rem;
       justify-items: left;
     }

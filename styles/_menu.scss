@@ -1,23 +1,41 @@
 // menu section
 .menu {
   background: $clr-black;
+  * {
+    color: $clr-white;
+    text-transform: inherit;
+  }
+  h2 {
+    font-size: $spacing-large;
+    letter-spacing: -0.4px;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    h2 {
+      line-height: $spacing-xlarge;
+    }
+  }
   @media screen and (min-width: $bp-laptop) {
     padding-top: 12.5rem;
     .container {
       display: grid;
       display: grid;
       grid-template-columns:
-        1rem minmax(25.3125rem, 1fr) minmax(25.3125rem, 1fr)
+        1rem minmax(25.3125rem, 1fr) 7.8125rem minmax(25.3125rem, 1fr)
         1rem;
-      gap: 3rem;
       justify-items: left;
+    }
+    h2 {
+      line-height: 3.5rem;
+      letter-spacing: -0.5px;
     }
     .menu__intro {
       grid-column: 2;
+      text-align: left;
+      max-width: 27.8125rem;
     }
     .menu-list {
       grid-row: 1;
-      grid-column: 3;
+      grid-column: 4;
     }
     .menu-item {
       display: flex;
@@ -33,14 +51,6 @@
         padding-left: 0;
       }
     }
-  }
-  * {
-    color: $clr-white;
-    text-transform: inherit;
-  }
-  h2 {
-    line-height: $spacing-xlarge;
-    letter-spacing: -0.4px;
   }
 }
 .text {

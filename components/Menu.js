@@ -15,11 +15,10 @@ export default function Menu() {
         <ul className="menu-list">
           <li className="menu-item">
             <img
-              srcSet="/images/salmon-mobile.jpg 480w,
-             /images/salmon-desktop-tablet.jpg 992w"
-              sizes="(max-width: 499px) 480px,
-            (max-width: 992px) 480px, 991px"
-              src="/images/salmon-desktop-tablet.jpg"
+              srcSet="/images/salmon-mobile.jpg 327w,
+               /images/salmon-desktop-tablet.jpg 128w"
+              sizes="(max-width: 499px) 327px, 128px"
+              src="/images/salmon-mobile.jpg"
               alt="Seared Salmon Fillet"
             />
             <div className="menu-item__content">
@@ -32,11 +31,10 @@ export default function Menu() {
           </li>
           <li className="menu-item">
             <img
-              srcSet="/images/beef-mobile.jpg 480w,
-             /images/beef-desktop-tablet.jpg 992w"
-              sizes="(max-width: 499px) 480px,
-            (max-width: 992px) 480px, 991px"
-              src="/images/beef-desktop-tablet.jpg"
+              srcSet="/images/beef-mobile.jpg 327w,
+               /images/beef-desktop-tablet.jpg 128w"
+              sizes="(max-width: 499px) 327px, 128px"
+              src="/images/beef-mobile.jpg"
               alt="Rosemary Filet Mignon"
             />
             <div className="menu-item__content">
@@ -49,11 +47,10 @@ export default function Menu() {
           </li>
           <li className="menu-item">
             <img
-              srcSet="/images/chocolate-mobile.jpg 480w,
-             /images/chocolate-desktop-tablet.jpg 992w"
-              sizes="(max-width: 499px) 480px,
-            (max-width: 992px) 480px, 991px"
-              src="/images/chocolate-desktop-tablet.jpg"
+              srcSet="/images/chocolate-mobile.jpg 327w,
+               /images/chocolate-desktop-tablet.jpg 128w"
+              sizes="(max-width: 499px) 327px, 128px"
+              src="/images/chocolate-mobile.jpg"
               alt="Summer Fruit Chocolate Mousse"
             />
             <div className="menu-item__content">
