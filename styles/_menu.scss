@@ -48,11 +48,12 @@
     }
     &__intro {
       grid-column: 2;
+      grid-row: 2;
       text-align: left;
       max-width: 27.8125rem;
     }
     .menu-list {
-      grid-row: 1;
+      grid-row: 2;
       grid-column: 4;
     }
     .menu-item {
@@ -96,5 +97,26 @@
     letter-spacing: -0.19px;
     font-size: $fs-text;
     padding: 0px 20px;
+  }
+}
+.lines {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+
+  &__stroke {
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: $clr-primary;
+    margin-left: 8px;
+  }
+  &__circle {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid $clr-primary;
   }
 }

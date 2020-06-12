@@ -12,8 +12,9 @@ export default function Menu() {
             of our diner’s favourites. Our menu is revamped every season.
           </p>
         </div>
-        <div className="line">
-          <span></span>
+        <div className="lines">
+          <span className="lines__circle"></span>
+          <span className="lines__stroke"></span>
         </div>
         <ul className="menu-list">
           {menuList.map((item) => (
