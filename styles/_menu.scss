@@ -11,13 +11,31 @@
   }
   @media screen and (min-width: $bp-tablet) {
     h2 {
+      font-size: $fs-h2;
       line-height: $spacing-xlarge;
+    }
+    .menu-item {
+      &__img {
+        flex-basis: 40%;
+        position: relative;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 18px;
+          right: 0;
+          width: 32px;
+          height: 1px;
+          background: $clr-primary;
+          transform: translateX(100%);
+        }
+      }
     }
   }
   @media screen and (min-width: $bp-laptop) {
     padding-top: 12.5rem;
     .container {
-      display: grid;
       display: grid;
       grid-template-columns:
         1rem minmax(25.3125rem, 1fr) 7.8125rem minmax(25.3125rem, 1fr)
@@ -28,7 +46,7 @@
       line-height: 3.5rem;
       letter-spacing: -0.5px;
     }
-    .menu__intro {
+    &__intro {
       grid-column: 2;
       text-align: left;
       max-width: 27.8125rem;
@@ -64,19 +82,20 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
   img {
+    width: 100%;
     max-width: 100%;
     margin: 0 auto $spacing-large;
   }
-}
-.menu-item__title {
-  font-size: $fs-body;
-  font-weight: $fw-bold;
-  margin-bottom: 4px;
-}
-.menu-item__desc {
-  margin-bottom: 25px;
-  line-height: 28px;
-  letter-spacing: -0.19px;
-  font-size: $fs-text;
-  padding: 0px 20px;
+  &__title {
+    font-size: $fs-body;
+    font-weight: $fw-bold;
+    margin-bottom: 4px;
+  }
+  &__desc {
+    margin-bottom: 25px;
+    line-height: 28px;
+    letter-spacing: -0.19px;
+    font-size: $fs-text;
+    padding: 0px 20px;
+  }
 }
