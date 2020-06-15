@@ -171,3 +171,12 @@ button:disabled {
   background: transparent;
   border: 1px solid $clr-white;
 }
+
+@media screen and (min-width: $bp-laptop) {
+  .container {
+    display: grid;
+    grid-template-columns:
+      1rem minmax(25.3125rem, 1fr) 7.8125rem minmax(25.3125rem, 1fr)
+      1rem;
+  }
+}

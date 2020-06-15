@@ -1,0 +1,29 @@
+// footer
+footer {
+  background: $clr-black;
+  padding: ($spacing-xlarge * 2) 0;
+  color: $clr-white;
+  .logo {
+    margin-bottom: $spacing-xlarge;
+  }
+  p {
+    color: $clr-white;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    .container {
+      display: grid;
+      grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(23rem, 1fr)) minmax(
+          1rem,
+          1fr
+        );
+    }
+    .logo {
+      margin-bottom: 2.5rem;
+      grid-column: 2;
+    }
+    .address,
+    .open-hours {
+      text-align: left;
+    }
+  }
+}

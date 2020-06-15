@@ -1,0 +1,51 @@
+// header
+header {
+  background-color: $clr-black;
+  background-image: url(/images/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 14rem 0 2.5rem;
+
+  .hero-content {
+    p {
+      color: $clr-white;
+      text-transform: inherit;
+      line-height: 1.667;
+      letter-spacing: -0.4px;
+      max-width: 20.3125rem; //325px
+      margin: 0 auto 1rem;
+    }
+    button {
+      margin-bottom: 128px;
+    }
+  }
+  @media screen and (min-width: $bp-mobile) {
+    background-image: url(/images/hero-bg-tablet.jpg);
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding: 2.5rem 0;
+    background-image: url(/images/hero-bg-desktop.jpg);
+    background-position: right;
+    .container {
+      // display: grid;
+      // grid-template-columns:
+      //   minmax(1rem, 1fr) minmax(30.3125rem, 1fr) 7.8125rem minmax(
+      //     30.3125rem,
+      //     1fr
+      //   )
+      //   minmax(1rem, 1fr);
+    }
+    .hero-content {
+      grid-column: 2;
+      text-align: left;
+      .logo {
+        margin-bottom: 9.5625rem; //153px
+      }
+      p {
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

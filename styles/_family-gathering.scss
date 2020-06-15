@@ -1,10 +1,6 @@
 // family-gathering section
 .family-gathering {
   position: relative;
-
-  .lines {
-    display: none;
-  }
   .img {
     position: relative;
     &::before {
@@ -72,21 +68,6 @@
       grid-template-columns: $spacing-medium 1fr $spacing-medium;
       grid-template-rows: 100px min-content auto;
       justify-content: center;
-    }
-
-    .lines {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 3.9375rem;
-      left: -2.875rem;
-      span {
-        display: inline-block;
-        width: 10rem;
-        height: $spacing-small / 2;
-        background: $clr-primary;
-        margin-bottom: $spacing-normal / 2;
-      }
     }
     &::before {
       content: '';
@@ -227,5 +208,25 @@
   p {
     text-transform: inherit;
     margin-bottom: $spacing-large;
+  }
+}
+
+.lines {
+  display: none;
+}
+@media screen and (min-width: $bp-tablet) {
+  .lines {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.9375rem;
+    left: -2.875rem;
+    span {
+      display: inline-block;
+      width: 10rem;
+      height: $spacing-small / 2;
+      background: $clr-primary;
+      margin-bottom: $spacing-normal / 2;
+    }
   }
 }
