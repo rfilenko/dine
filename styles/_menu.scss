@@ -50,7 +50,7 @@
       letter-spacing: -0.5px;
     }
     &__intro {
-      grid-column: 2;
+      grid-column: 1;
       grid-row: 1;
       text-align: left;
       max-width: 27.8125rem;
@@ -58,7 +58,7 @@
     }
     .menu-list {
       grid-row: 1;
-      grid-column: 4;
+      grid-column: 3;
     }
     .menu-item {
       display: flex;

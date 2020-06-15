@@ -64,10 +64,9 @@
   }
   @media screen and (min-width: $bp-tablet) {
     .container {
-      display: grid;
-      grid-template-columns: $spacing-medium 1fr $spacing-medium;
+      // display: grid;
+      // grid-template-columns: $spacing-medium 1fr $spacing-medium;
       grid-template-rows: 100px min-content auto;
-      justify-content: center;
     }
     &::before {
       content: '';
@@ -86,13 +85,6 @@
   @media screen and (min-width: $bp-laptop) {
     //desktop
     padding-top: 16rem;
-    .container {
-      grid-template-columns:
-        $spacing-medium minmax(30.3125rem, 1fr) minmax(30.3125rem, 1fr)
-        $spacing-medium;
-      gap: 3rem;
-      justify-items: left;
-    }
     h2 {
       margin: 0;
       grid-row: 1;
@@ -108,13 +100,13 @@
       max-width: 30.3125rem;
     }
     .lines {
-      grid-column: 2;
+      grid-column: 1;
       position: absolute;
       top: -2.062rem;
       left: -2.875rem;
     }
     .img {
-      grid-column: 2;
+      grid-column: 1 / span 2;
       grid-row: 1 / span 2;
     }
     button {
@@ -131,18 +123,14 @@
   }
   @media screen and (min-width: $bp-desktop) {
     //big desktop
-    .container {
-      grid-template-columns:
-        minmax(1rem, 1fr) minmax(30.3125rem, 1fr) 7.8125rem minmax(
-          30.3125rem,
-          1fr
-        )
-        minmax(1rem, 1fr);
-    }
     h2,
     .content,
     .categories {
-      grid-column: 4;
+      grid-column: 3;
+      padding-left: 5.9375rem;
+    }
+    .content {
+      max-width: inherit;
     }
   }
 }

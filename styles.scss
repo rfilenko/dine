@@ -41,23 +41,6 @@ $bp-desktop: '1200px';
 
 @import '/styles/globals';
 
-section {
-  padding: ($spacing-xlarge * 2) 0;
-}
-// main
-main {
-  text-align: center;
-  padding-bottom: 0;
-}
-
-p {
-  font-size: $fs-h4;
-  font-weight: $fw-regular;
-  text-transform: uppercase;
-  line-height: 2;
-  letter-spacing: 2px;
-}
-
 @import '/styles/hero';
 @import '/styles/about';
 @import '/styles/menu';

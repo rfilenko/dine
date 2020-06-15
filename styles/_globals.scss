@@ -92,7 +92,22 @@ img {
 .flex-column {
   flex-direction: column;
 }
+section {
+  padding: ($spacing-xlarge * 2) 0;
+}
+// main
+main {
+  text-align: center;
+  padding-bottom: 0;
+}
 
+p {
+  font-size: $fs-h4;
+  font-weight: $fw-regular;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -103,7 +118,7 @@ ul {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  padding: 0 $spacing-medium $spacing-xxlarge;
+  padding: 0 $spacing-medium;
 }
 .title {
   padding-top: $spacing-small;
@@ -175,8 +190,6 @@ button:disabled {
 @media screen and (min-width: $bp-laptop) {
   .container {
     display: grid;
-    grid-template-columns:
-      1rem minmax(25.3125rem, 1fr) 7.8125rem minmax(25.3125rem, 1fr)
-      1rem;
+    grid-template-columns: minmax(33.75rem, 0) 1.875rem minmax(33.75rem, 0);
   }
 }
