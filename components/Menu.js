@@ -1,5 +1,6 @@
 import { menuList } from '../data/menu';
 import MenuItem from './MenuItem';
+import AbstactLine from './AbstactLine';
 
 export default function Menu() {
   return (
@@ -12,10 +13,7 @@ export default function Menu() {
             of our diner’s favourites. Our menu is revamped every season.
           </p>
         </div>
-        <div className="lines">
-          <span className="lines__circle"></span>
-          <span className="lines__stroke"></span>
-        </div>
+        <AbstactLine />
         <ul className="menu-list">
           {menuList.map((item) => (
             <MenuItem item={item} key={item.id} />

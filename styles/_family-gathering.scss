@@ -169,14 +169,39 @@
   li {
     position: relative;
     margin-bottom: $spacing-normal;
-    &:not(.active) a {
-      opacity: 0.6;
+
+    &.active {
+      a {
+        opacity: 1;
+      }
     }
   }
   a {
     text-transform: uppercase;
     font-size: $fs-h4;
+    font-weight: $fw-semi-bold;
     line-height: 2;
+    position: relative;
+    opacity: 0.5;
+    &::after {
+      content: '';
+      height: 1px;
+      transform: scale(0) translateX(-50%);
+      bottom: 0.5em;
+      left: 50%;
+      display: block;
+      background: $clr-primary;
+      transform-origin: center;
+      transition: all 0.25s ease-in-out;
+    }
+    &:hover,
+    &:focus {
+      color: $clr-primary;
+      opacity: 1;
+      &::after {
+        transform: scale(1);
+      }
+    }
   }
 }
 

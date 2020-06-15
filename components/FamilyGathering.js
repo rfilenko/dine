@@ -1,4 +1,7 @@
-export default function FamilyGathering() {
+import FiveLines from './FiveLines';
+import EventCategories from './EventCategories';
+
+const FamilyGathering = () => {
   return (
     <section className="family-gathering">
       <div className="container">
@@ -14,13 +17,7 @@ export default function FamilyGathering() {
             alt="family gathering"
           />
         </div>
-        <div className="lines">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <FiveLines />
         <div className="content">
           <p>
             We love catering for entire families. So please bring everyone along
@@ -30,18 +27,9 @@ export default function FamilyGathering() {
           <button className="btn">Book a table</button>
         </div>
 
-        <ul className="categories">
-          <li className="active">
-            <a href="#">Family Gathering</a>
-          </li>
-          <li>
-            <a href="#">Special Events</a>
-          </li>
-          <li>
-            <a href="#">Social Events</a>
-          </li>
-        </ul>
+        <EventCategories />
       </div>
     </section>
   );
-}
+};
+export default FamilyGathering;
