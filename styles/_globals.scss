@@ -190,6 +190,9 @@ button:disabled {
 @media screen and (min-width: $bp-laptop) {
   .container {
     display: grid;
-    grid-template-columns: minmax(33.75rem, 0) 1.875rem minmax(33.75rem, 0);
+    grid-template-columns: minmax(33.75rem, 0) 1.875rem 5.9375rem minmax(
+        33.75rem,
+        0
+      );
   }
 }

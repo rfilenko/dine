@@ -58,7 +58,7 @@
     }
     .menu-list {
       grid-row: 1;
-      grid-column: 3;
+      grid-column: 3 / 5;
     }
     .menu-item {
       display: flex;
