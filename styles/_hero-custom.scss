@@ -1,0 +1,59 @@
+// header custom
+.custom {
+  background-color: $clr-black;
+  background-image: url(/images/hero-custom-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 14rem 0 2.5rem;
+  min-height: 50vh;
+
+  .reservations-content {
+    h1 {
+      color: $clr-white;
+      margin-bottom: 24px;
+    }
+    p {
+      color: $clr-white;
+      text-transform: inherit;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.667;
+      letter-spacing: -0.23px;
+      max-width: 27.8125rem; //445px
+      margin: 0 auto 1rem;
+    }
+    button {
+      margin-bottom: 128px;
+    }
+  }
+  @media screen and (min-width: $bp-mobile) {
+    background-image: url(/images/hero-custom-bg-tablet.jpg);
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding: 2.5rem 0;
+    background-size: cover;
+    background-image: url(/images/hero-custom-bg-desktop.jpg);
+
+    .container {
+      grid-template-rows: auto 9.5625rem 330px;
+    }
+    .reservations-content {
+      grid-column: 1;
+      text-align: left;
+      grid-row: 3;
+      align-self: start;
+      p {
+        margin-bottom: 0;
+      }
+
+      .logo {
+        margin-bottom: 9.5625rem; //153px
+      }
+      p {
+        margin-left: 0;
+        margin-bottom: 7.8125rem;
+      }
+    }
+  }
+}

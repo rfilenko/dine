@@ -1,0 +1,77 @@
+.reservations-section {
+  position: relative;
+  padding: 0;
+  height: 20rem;
+  .container {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .lines {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    justify-self: flex-end;
+  }
+}
+.custom {
+  form {
+    position: relative;
+    z-index: 10;
+    height: 560px;
+    width: 540px;
+    padding: 48px;
+    box-shadow: 0 75px 100px -50px #384255;
+    background: $clr-white;
+    display: flex;
+    flex-direction: column;
+    > *:not(button) {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: none;
+      border-bottom: 2px solid $clr-black;
+    }
+    select {
+      color: #151515;
+      font-size: $fs-body;
+      font-weight: $fw-bold;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .reservations-section {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $clr-shuttle-gray;
+      opacity: 0.08;
+      height: 320px;
+      width: 60vw;
+      z-index: -1;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+  }
+}
+@media screen and (min-width: $bp-laptop) {
+  .custom {
+    form {
+      grid-column: 3 / span 2;
+
+      grid-row: 3;
+    }
+  }
+  .reservations-section {
+    .container {
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .lines {
+      grid-row: 3;
+      top: 1rem;
+    }
+  }
+}

@@ -186,6 +186,16 @@ button:disabled {
   background: transparent;
   border: 1px solid $clr-white;
 }
+.btn--outline {
+  background: transparent;
+  border: 1px solid $clr-black;
+  color: $clr-black;
+  &:hover {
+    opacity: 0.89;
+    background: $clr-black;
+    color: $clr-white;
+  }
+}
 
 @media screen and (min-width: $bp-laptop) {
   .container {
