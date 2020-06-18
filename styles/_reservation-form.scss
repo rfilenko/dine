@@ -27,9 +27,6 @@ form {
   flex-direction: column;
   > *:not(button) {
     margin-bottom: 2rem;
-    padding: 1rem;
-    border: none;
-    border-bottom: 2px solid $clr-black;
   }
   select {
     color: #151515;
@@ -38,9 +35,48 @@ form {
     text-align: center;
   }
 }
+input {
+  font-size: $fs-body;
+  line-height: 1.556;
+  font-weight: $fw-regular;
+  letter-spacing: -0.23px;
+  color: $clr-black;
+}
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid $clr-black;
+}
 label {
   display: none;
   visibility: hidden;
+}
+.form-group {
+  position: relative;
+}
+.error {
+  input {
+    color: $clr-error;
+    opacity: 0.5;
+  }
+  input:focus {
+    outline-color: $clr-error;
+    border-color: $clr-error;
+  }
+}
+
+.form-error {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: $fw-regular;
+  letter-spacing: 0.13px;
+  color: $clr-error;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: inherit;
 }
 
 @media screen and (min-width: $bp-tablet) {
