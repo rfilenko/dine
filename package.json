@@ -19,6 +19,7 @@
     "next-compose-plugins": "^2.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-modal": "^3.11.2",
     "sass": "1.26.3"
   },
   "devDependencies": {

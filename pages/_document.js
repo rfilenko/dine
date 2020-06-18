@@ -14,6 +14,10 @@ class MyDocument extends Document {
             name="description"
             content="Dine restaurant, build with NextJS"
           />
+            <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+          />
           <link
             rel="icon"
             type="image/png"

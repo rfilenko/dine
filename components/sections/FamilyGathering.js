@@ -1,4 +1,4 @@
-import FiveLines from './FiveLines';
+import FiveLines from '../visual/FiveLines';
 import EventCategories from './EventCategories';
 
 const FamilyGathering = () => {

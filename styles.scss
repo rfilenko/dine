@@ -1,46 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap');
-
-//colors
-$clr-black: #111111;
-$clr-white: #ffffff;
-
-$clr-beaver: #9e7f66;
-$clr-mirage: #17192b;
-$clr-ebony-clay: #242b37;
-$clr-shuttle-gray: #5c6779;
-$clr-dark-gray: #4c4c4c;
-
-$clr-primary: $clr-beaver;
-$clr-secondary: $clr-mirage;
-$clr-accent: $clr-shuttle-gray;
-
-$fs-h1: 4rem; // 64px
-$fs-h2: 2.5rem; // 40px
-$fs-h4: 0.875rem; // 14px
-
-$fs-body: 1.125rem; // 18px
-$fs-text: 0.9375rem; // 15px
-
-$fw-light: 300;
-$fw-regular: 400;
-$fw-semi-bold: 600;
-$fw-bold: 700;
-
-$spacing-small: 0.75rem; // 12px
-$spacing-normal: 1rem; // 16px
-$spacing-medium: 1.5rem; // 24px
-$spacing-large: 2rem; // 32px
-$spacing-xlarge: 2.5rem; // 40px
-$spacing-xxlarge: 4rem; // 64px
-
-$bp-mobile: '600px';
-$bp-small: '767px';
-$bp-tablet: '768px';
-$bp-laptop: '1024px';
-$bp-desktop: '1200px';
-
+@import '/styles/variables';
 @import '/styles/globals';
 
+//sections
 @import '/styles/hero';
 @import '/styles/about';
 @import '/styles/menu';

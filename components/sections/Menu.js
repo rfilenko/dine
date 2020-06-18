@@ -1,6 +1,6 @@
-import { menuList } from '../data/menu';
+import { menuList } from '../../data/menu';
 import MenuItem from './MenuItem';
-import AbstactLine from './AbstactLine';
+import AbstactLine from '../visual/AbstactLine';
 
 export default function Menu() {
   return (

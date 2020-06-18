@@ -1,5 +1,5 @@
-import AbstactLine from './AbstactLine';
-import FiveLines from './FiveLines';
+import AbstactLine from '../visual/AbstactLine';
+import FiveLines from '../visual/FiveLines';
 
 const About = () => {
   return (

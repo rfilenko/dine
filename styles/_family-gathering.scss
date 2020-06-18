@@ -93,10 +93,10 @@
     .content,
     .categories {
       grid-column: 3;
+      text-align: left;
     }
     .content {
       grid-row: 2;
-      text-align: left;
       max-width: 30.3125rem;
     }
     .lines {
