@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FiveLines from '../visual/FiveLines';
 import EventCategories from './EventCategories';
 
@@ -24,7 +25,9 @@ const FamilyGathering = () => {
             for a special meal with your loved ones. We’ll provide a memorable
             experience for all.
           </p>
-          <button className="btn">Book a table</button>
+          <Link href={`/reservations`}>
+            <button className="btn">Book a table</button>
+          </Link>
         </div>
 
         <EventCategories />

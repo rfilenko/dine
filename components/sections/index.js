@@ -1,8 +1,6 @@
 import About from './About';
 import FamilyGathering from './FamilyGathering';
 import Menu from './Menu';
-import Reservation from './Reservation';
+import ReservationSection from './ReservationSection';
 
-export {
-  About, FamilyGathering, Menu, Reservation
-}
+export { About, FamilyGathering, Menu, ReservationSection };

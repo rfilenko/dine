@@ -1,19 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Header from '../Header';
+import HeaderCustom from '../HeaderCustom';
 import Footer from '../Footer';
 
-const BaseLayout = ({ children }) => {
+const DefaultLayout = ({ children }) => {
   return (
     <>
       <Head>
         <html lang="en" />
       </Head>
-      <Header />
+      <HeaderCustom />
       <main>{children}</main>
       <Footer />
     </>
   );
 };
-export default BaseLayout;
+export default DefaultLayout;

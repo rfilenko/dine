@@ -1,20 +1,29 @@
 import Head from 'next/head';
-import BaseLayout from '../components/layouts/Base';
+import MainLayout from '../components/layouts/main';
 
-import {About, FamilyGathering, Menu, Reservation} from '../components/sections';
+import {
+  About,
+  FamilyGathering,
+  Menu,
+  ReservationSection,
+} from '../components/sections';
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <Head>
         <title>Dine restaurant</title>
       </Head>
-      <BaseLayout>
+      <MainLayout>
         <About />
         <Menu />
         <FamilyGathering />
-        <Reservation />
-      </BaseLayout>
+        <ReservationSection />
+      </MainLayout>
     </>
   );
-}
+};
+
+HomePage.Layout = MainLayout;
+
+export default HomePage;

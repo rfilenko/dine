@@ -1,21 +1,24 @@
 import Head from 'next/head';
-import Reserv from '../components/layouts/Reserv';
+import DefaultLayout from '../components/layouts/default';
 import FiveLines from '../components/visual/FiveLines';
-import { About } from '../components/sections';
 
-export default function Home() {
+const ReservationsPage = () => {
   return (
     <>
       <Head>
         <title>Reservations page</title>
       </Head>
-      <Reserv>
+      <DefaultLayout>
         <section className="reservations-section">
           <div className="container">
             <FiveLines />
           </div>
         </section>
-      </Reserv>
+      </DefaultLayout>
     </>
   );
-}
+};
+
+ReservationsPage.Layout = DefaultLayout;
+
+export default ReservationsPage;

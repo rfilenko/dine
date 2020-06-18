@@ -1,8 +1,9 @@
 import Logo from './visual/Logo';
+import ReservationForm from './ReservationForm';
 
 export default function HeaderCustom() {
   return (
-    <header className="custom">
+    <header className="custom-header">
       <div className="container">
         <Logo />
         <div className="reservations-content">
@@ -13,21 +14,7 @@ export default function HeaderCustom() {
             to accommodate you.
           </p>
         </div>
-        <form>
-          <input type="text" placeholder="John Apples" />
-          <input type="email" placeholder="Email" />
-          <select name="people-count">
-            <option value="1">1 person</option>
-            <option value="2" selected>
-              2 persons
-            </option>
-            <option value="3">3 people</option>
-            <option value="4">4 people</option>
-          </select>
-          <button type="submit" className="btn btn--outline">
-            MAKE RESERVATION
-          </button>
-        </form>
+        <ReservationForm />
       </div>
     </header>
   );

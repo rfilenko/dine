@@ -1,19 +1,18 @@
-import React from 'react';
 import Head from 'next/head';
 
-import HeaderCustom from '../HeaderCustom';
+import Header from '../Header';
 import Footer from '../Footer';
 
-const Reserv = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
     <>
       <Head>
         <html lang="en" />
       </Head>
-      <HeaderCustom />
+      <Header />
       <main>{children}</main>
       <Footer />
     </>
   );
 };
-export default Reserv;
+export default MainLayout;

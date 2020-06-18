@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Logo from './visual/Logo';
 
 export default function Header() {
@@ -11,7 +12,9 @@ export default function Header() {
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
           </p>
-          <button className="btn btn--dark">Book a table</button>
+          <Link href={`/reservations`}>
+            <button className="btn btn--dark">Book a table</button>
+          </Link>
         </div>
       </div>
     </header>
