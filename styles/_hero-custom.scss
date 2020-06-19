@@ -3,15 +3,23 @@ header.custom-header {
   background-color: $clr-black;
   background-image: url(/images/reservations-bg-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  padding: 14rem 0 2.5rem;
-  min-height: 50vh;
+  padding: 3.5rem 0;
+  height: 90vh;
 
+  .logo {
+    margin-bottom: $spacing-xlarge; //40px
+    justify-self: flex-start;
+  }
   .reservations-content {
     h1 {
       color: $clr-white;
-      margin-bottom: 24px;
+      margin-bottom: $spacing-medium;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+      font-size: 2rem;
+      font-weight: $fw-light;
     }
     p {
       color: $clr-white;
@@ -21,13 +29,15 @@ header.custom-header {
       line-height: 1.667;
       letter-spacing: -0.23px;
       max-width: 27.8125rem; //445px
-      margin: 0 auto 1rem;
+      margin: 0 auto $spacing-medium;
     }
     button {
       margin-bottom: 128px;
     }
   }
   @media screen and (min-width: $bp-mobile) {
+    height: auto;
+    min-height: 50vh;
     background-image: url(/images/reservations-bg-tablet.jpg);
   }
   @media screen and (min-width: $bp-desktop) {

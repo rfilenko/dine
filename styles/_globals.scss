@@ -169,7 +169,7 @@ button:disabled {
   font-weight: $fw-semi-bold;
   line-height: 1.143;
   letter-spacing: 2px;
-  padding: $spacing-medium $spacing-medium * 2;
+  padding: 1.125rem 1.5625rem;
   opacity: 1;
   transition: all 250ms ease-in-out;
   margin-bottom: $spacing-medium;
@@ -198,6 +198,9 @@ button:disabled {
 }
 
 @media screen and (min-width: $bp-laptop) {
+  .btn {
+    padding: $spacing-medium $spacing-medium * 2;
+  }
   .container {
     display: grid;
     grid-template-columns: minmax(33.75rem, 0) 1.875rem 5.9375rem minmax(
