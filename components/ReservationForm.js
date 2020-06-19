@@ -11,7 +11,7 @@ const ReservationForm = () => {
     setModalIsOpen(true);
     setPersonName(data.name);
     setTimeout(() => {
-      // Router.push('/');
+      Router.push('/');
     }, 3000);
   };
   return (
