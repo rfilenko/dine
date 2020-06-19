@@ -24,18 +24,6 @@
       &__img {
         flex-basis: 40%;
         position: relative;
-
-        &::before {
-          content: '';
-          display: inline-block;
-          position: absolute;
-          top: 18px;
-          right: 0;
-          width: 32px;
-          height: 1px;
-          background: $clr-primary;
-          transform: translateX(100%);
-        }
       }
     }
   }
@@ -55,6 +43,10 @@
       text-align: left;
       max-width: 27.8125rem;
       align-self: baseline;
+
+      .abstract {
+        justify-content: flex-start;
+      }
     }
     .menu-list {
       grid-row: 1;
@@ -62,6 +54,21 @@
     }
     .menu-item {
       display: flex;
+      .menu-item {
+        &__img {
+          &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 32px;
+            height: 1px;
+            background: $clr-primary;
+            transform: translateX(100%);
+          }
+        }
+      }
       img {
         align-self: start;
       }
@@ -106,6 +113,7 @@
 .abstract {
   grid-column: 2;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 48px;
 

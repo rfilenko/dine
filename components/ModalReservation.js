@@ -7,7 +7,7 @@ const customStyles = {
     left: '50%',
     maxHeight: '300px',
     width: '90%',
-    maxWidth: '575x',
+    maxWidth: '575px',
     overflow: 'hidden',
     background: '#ffffff',
     borderRadius: 'none',
@@ -35,6 +35,7 @@ const ModalReservation = ({ personName, modalIsOpen }) => {
     >
       <p>
         Thank you for your reservation, {personName.split(' ')[0]} 🙂. <br />{' '}
+        <br />
         You will be redirected to Home Page
       </p>
     </Modal>

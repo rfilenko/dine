@@ -19,10 +19,17 @@
     }
   }
 }
+@media screen and (max-width: $bp-mobile) {
+  .img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
 @media screen and (min-width: $bp-laptop) {
   .about {
     margin-bottom: -6.5rem;
-    
     .container {
       display: grid;
       row-gap: 3rem;

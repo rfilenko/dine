@@ -203,6 +203,16 @@ button:disabled {
   }
   .container {
     display: grid;
+    grid-template-columns: minmax(23.75rem, 1fr) 1.875rem 5.9375rem minmax(
+        23.75rem,
+        1fr
+      );
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .container {
+    display: grid;
     grid-template-columns: minmax(33.75rem, 0) 1.875rem 5.9375rem minmax(
         33.75rem,
         0

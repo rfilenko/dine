@@ -89,15 +89,9 @@
       margin: 0;
       grid-row: 1;
     }
-    h2,
-    .content,
-    .categories {
-      grid-column: 3;
-      text-align: left;
-    }
     .content {
       grid-row: 2;
-      max-width: 30.3125rem;
+      max-width: inherit;
     }
     .lines {
       grid-column: 1;
@@ -120,16 +114,11 @@
       grid-row: 2;
       align-self: end;
     }
-  }
-  @media screen and (min-width: $bp-desktop) {
-    //big desktop
     h2,
     .content,
     .categories {
       grid-column: 4;
-    }
-    .content {
-      max-width: inherit;
+      text-align: left;
     }
   }
 }
@@ -201,7 +190,7 @@
 .lines {
   display: none;
 }
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-desktop) {
   .lines {
     display: flex;
     flex-direction: column;

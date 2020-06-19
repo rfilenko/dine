@@ -10,7 +10,7 @@ footer {
   p {
     color: $clr-white;
   }
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-laptop) {
     .logo {
       margin-bottom: 2.5rem;
       grid-column: 1;
