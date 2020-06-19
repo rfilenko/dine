@@ -72,8 +72,12 @@ select {
     color: $clr-error;
     opacity: 0.5;
   }
+  ::placeholder {
+    color: $clr-error;
+  }
   input:focus {
     outline-color: $clr-error;
+    outline: none;
     border-color: $clr-error;
   }
 }
@@ -86,8 +90,20 @@ select {
   color: $clr-error;
   margin: 0;
   padding: 0;
+  padding-left: 1rem;
   text-align: left;
   text-transform: inherit;
+}
+// modal
+.ReactModal__Overlay--after-open {
+  z-index: 15;
+}
+.ReactModal__Content {
+  p {
+    text-transform: inherit;
+    color: $clr-white;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: $bp-tablet) {
