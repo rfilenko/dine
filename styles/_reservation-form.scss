@@ -49,9 +49,20 @@ select {
   border: none;
   border-bottom: 2px solid $clr-black;
 }
-label {
-  display: none;
-  visibility: hidden;
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
 }
 .form-group {
   position: relative;
