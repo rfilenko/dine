@@ -35,16 +35,58 @@ header.custom-header {
       margin-bottom: 128px;
     }
   }
-  @media screen and (min-width: $bp-mobile) {
-    height: auto;
-    min-height: 50vh;
-    background-image: url(/images/reservations-bg-tablet.jpg);
+  @media screen and (min-width: $bp-tablet) {
+    height: 30vh;
+    .reservations-content {
+      button {
+        display: none;
+      }
+    }
+    form {
+      margin-top: 0;
+    }
   }
+  @media screen and (min-width: $bp-tablet) and (max-width: $bp-desktop) {
+    background-image: url(/images/reservations-bg-tablet.jpg);
+    .container {
+      display: grid;
+      grid-template-columns: 39px 75px minmax(540px, 1fr) 39px;
+      grid-template-rows: min-content auto;
+    }
+    .reservations-content {
+      grid-column: 2 / -2;
+      grid-row: 2;
+    }
+    form {
+      grid-column: 3;
+      grid-row: 3;
+    }
+    ~ footer {
+      .container {
+        display: grid;
+        grid-template-columns: 39px 75px minmax(540px, 1fr) 39px;
+        grid-template-rows: min-content auto;
+      }
+      .logo {
+        justify-self: flex-start;
+      }
+      p {
+        grid-row: 3;
+        grid-column: 3;
+        justify-self: center;
+        text-align: left;
+      }
+      .address {
+        grid-row: 1;
+      }
+    }
+  }
+
   @media screen and (min-width: $bp-desktop) {
     padding: 2.5rem 0;
     background-size: cover;
+    height: auto;
     background-image: url(/images/reservations-bg-desktop.jpg);
-
     .container {
       grid-template-rows: auto 9.5625rem 330px;
     }

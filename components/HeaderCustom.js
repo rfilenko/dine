@@ -13,9 +13,7 @@ export default function HeaderCustom() {
             please feel free to call on the phone number below. We’ll be happy
             to accommodate you.
           </p>
-          <button type="submit" className="btn btn--dark">
-            RESERVE PLACE
-          </button>
+          <button className="btn btn--dark">RESERVE PLACE</button>
         </div>
         <ReservationForm />
       </div>
