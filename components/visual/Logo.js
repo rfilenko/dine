@@ -1,16 +1,16 @@
 import Link from 'next/link';
 
-const Logo = () => {
+const Logo = ({ logoId }) => {
   return (
     <Link href={`/`}>
       <a className="logo">
         <svg
-          aria-labelledby="title"
+          aria-labelledby={`${logoId}`}
           xmlns="http://www.w3.org/2000/svg"
           width="103"
           height="40"
         >
-          <title id="title" lang="en">
+          <title id={`${logoId}`} lang="en">
             Dine logo
           </title>
           <path

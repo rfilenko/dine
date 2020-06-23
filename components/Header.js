@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <div className="container">
         <div className="hero-content">
-          <Logo />
+          <Logo logoId="header-logo" />
           <h2 className="subtitle">Exquisite dining since 1989</h2>
           <p>
             Experience our seasonal menu in beautiful country surroundings. Eat

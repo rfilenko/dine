@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <Logo />
+        <Logo logoId="footer-logo" />
         <p className="address">
           Marthwaite, Sedbergh <br />
           Cumbria <br />

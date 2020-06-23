@@ -1,14 +1,11 @@
-import Head from 'next/head';
-
+import { LayoutFavicon } from './LayoutFavicon';
 import Header from '../Header';
 import Footer from '../Footer';
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Head>
-        <html lang="en" />
-      </Head>
+      <LayoutFavicon />
       <Header />
       <main>{children}</main>
       <Footer />
