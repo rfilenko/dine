@@ -1,18 +1,20 @@
 ## Dine restaurant website
 
-Dine restaurant website
+Dine restaurant landing page
 
 ## Motivation
 
-Just for practice and fun.
+Just to practice GRID and fun.
 
 ## Tech/framework used
 
-<b>Built with</b>
+<b>Built with:</b>
 
-- NEXTJS
+- NextJS
 - CSS GRID for layout
 - SCSS for styling
+- react-modal (modals)
+- reat-hooks-form (form validations)
 
 ## My profile at FrontendMentor
 
